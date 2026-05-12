@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DSE 英语口语练习计时器</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">DSE 英语口语练习</p>
+        <h1>专注倒计时，保持节奏</h1>
+        <p>选择模式后，计时器会自动运行并提醒你关键时刻。</p>
+      </div>
+    </header>
+
+    <main class="content">
+      <div class="timer-card">
+        <div class="timer-label">当前计时</div>
+        <div class="timer-display" id="timerDisplay">00:00</div>
+        <div class="pause-row">
+          <button id="pauseToggleBtn" class="control-btn" disabled>暂停 / 开始</button>
+        </div>
+        <div class="timer-hint" id="timerHint">请选择一个模式开始</div>
+        <div class="button-row">
+          <button data-minutes="10" id="prep10">10分钟准备</button>
+          <button data-minutes="8" id="disc8">8分钟讨论</button>
+          <button data-minutes="6" id="disc6">6分钟讨论</button>
+          <button data-minutes="1" id="qa1">1分钟个人问答</button>
+        </div>
+      </div>
+      <div class="notes">
+        <p>倒计时最后 10 秒将变为红色并闪烁，确保你能够及时结束。</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
